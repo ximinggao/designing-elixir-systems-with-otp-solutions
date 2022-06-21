@@ -6,5 +6,4 @@ config :mastery_persistence, MasteryPersistence.Repo,
   username: "postgres",
   password: "postgres"
 
-config :mastery, :persistence_fn,
-  &MasteryPersistence.record_response/2
+config :mastery, :persistence_fn, &MasteryPersistence.record_response/2

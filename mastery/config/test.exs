@@ -6,3 +6,5 @@ config :mastery_persistence, MasteryPersistence.Repo,
   username: "postgres",
   password: "postgres",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :mastery_persistence, Oban, testing: :inline
